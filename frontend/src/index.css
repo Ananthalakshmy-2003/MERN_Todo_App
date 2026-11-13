@@ -1,16 +1,32 @@
 
 :root {
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", Arial, sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-html, body, #root {
+html,
+body,
+#root {
   margin: 0;
+  width: 100%;
   min-width: 320px;
   min-height: 100%;
 }
 
-button, input {
+body {
+  min-height: 100vh;
+}
+
+button,
+input {
   font-family: inherit;
+}
+
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid #c28eae;
+  outline-offset: 3px;
 }
