@@ -12,18 +12,11 @@ app.get('/name', (req, res) => {
 app.use(cors());
 app.use(express.json());
 
-// Developer name endpoint
-app.get("/name", (req, res) => {
-  res.send(`Developer Name: ${process.env.DEVELOPER_NAME}`);
-});
+
 
 // Backend homepage
 app.get("/", (req, res) => {
-  res.send(`
-    <h1>Todo App</h1>
-    <p>Welcome to the Todo Application!</p>
-    <p>Backend server is running.</p>
-  `);
+  res.redirect("https://mern-todo-app-psi-orpin.vercel.app/");
 });
 
 // Todo routes
