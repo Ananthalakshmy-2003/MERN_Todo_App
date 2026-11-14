@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import "./App.css";
 
-const API_URL = "http://localhost:5000/api/todos";
+const API_URL ="https://mern-todo-backend-yzfv.onrender.com/api/todos";
 
 function App() {
   const [todos, setTodos] = useState([]);
